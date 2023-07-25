@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon">
+    
+    
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static', path='/css/swiper-bundle.min.css')}}">
+    
+    <!-- Css -->
+    <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}">
+    
+    <title>Forever Homes LLC</title>
+
+</head>
+<body>
+
+     <!--=============== HEADER ===============-->
+     <header class="header" id="header">
+            <nav class="nav container">
+                <a href="https://hjh0cv.deta.dev/" class="nav__logo"><img src="../static/img/logo.png" alt="" class="img-logo"></a>
+
+                <!-- Theme change button -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i> 
+
+
+            </nav>
+     </header>
+
+     <!--=============== MAIN ===============-->
+     <main class="main">
+         <!--=============== HOME ===============-->
+         <section class="home section" id="home">
+             <div class="home__container thanks container grid">
+                <div class="home__data thanks">
+                    <span class="home__greeting">Thanks for writing to us</span>
+                    <h1 class="home__name">We'll bein touch</h1>
+                    <h3 class="home__education">coming soon</h3>
+
+                    <div class="home__buttons">
+                        
+                        <a href="https://127.0.0.1:8000/#home" class="button">Home</a>
+                    </div>
+                </div>
+
+             </div>
+         </section>
+         
+ 
+     </main>
+
+     <!--=============== FOOTER ===============-->
+     <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">ForeverHomes</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li>
+                    <a href="https://www.facebook.com/devspace.2023" class="footer__social-link">
+                    <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/devspace_by_je" class="footer__social-link">
+                    <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com/jesusaed19" class="footer__social-link">
+                    <i class="bx bxl-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; DevSpace. All rigths reserved. <br> <a class="footer__copy-link" target="_blank" rel="noopener noreferrer" href="https://34h0hq.deta.dev">DevSpace-by-jesusespinoza.com</a>
+            </span>
+        </div>
+         
+     </footer>
+
+
+     <!--=============== SCROLLREVEAL ===============-->
+     <script src="{{url_for('static', path='/js/scrollreveal.min.js')}}"></script>
+
+     <!--=============== SWIPER JS ===============-->
+     <script src="{{url_for('static', path='/js/swiper-bundle.min.js')}}"></script>
+
+     <!--=============== MIXITUP FILTER ===============-->
+     <script src="{{url_for('static', path='/js/mixitup.min.js')}}"></script>
+
+     <!--=============== MAIN JS ===============-->
+    <script src="{{url_for('static', path='/js/main.js')}}"></script>
+</body>
+</html>
