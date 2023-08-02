@@ -4,7 +4,7 @@ from config import PASSW
 
 def email(mail, name, project):
     email_subject = name
-    sender_email_address = "jesusarmandoed57@gmail.com"
+    sender_email_address = "contactforeverhomes@gmail.com"
     receiver_email_address = "jesusarmandoed57@gmail.com"
     email_smtp = "smtp.gmail.com"
     email_password = PASSW
@@ -20,7 +20,7 @@ def email(mail, name, project):
     
     # set email body text
     
-    message.set_content(mail + "   My project: " + project)
+    message.set_content("EMAIL:  " +  mail + "\n \n" + "PROJECT:  " + project)
     
     # set smtp server an port 
     server = smtplib.SMTP(email_smtp, '587')

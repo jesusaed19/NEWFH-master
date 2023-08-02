@@ -148,6 +148,18 @@ sr.reveal('.home__handle', {delay: 700})
 sr.reveal('.home__social, .home__scroll', {delay: 700, origin: 'bottom'})
 
 
+/*======================= MODAL ACTION ====================== */
 
+const openModal = document.querySelector('.button_modal');
+const modal_contact = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal__close');
 
+openModal.addEventListener('submit', () =>{
+    modal_contact.classList.add('modal--show');
+
+});
+
+closeModal.addEventListener('click', () =>{
+    modal_contact.classList.remove('modal--show');
+});
 

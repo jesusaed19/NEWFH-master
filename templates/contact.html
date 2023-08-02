@@ -19,82 +19,23 @@
     
     <title>Forever Homes LLC</title>
 
+    <style>
+        body{
+            background-color: #fff;
+        }
+    </style>
+
 </head>
 <body>
 
-     <!--=============== HEADER ===============-->
-     <header class="header" id="header">
-            <nav class="nav container">
-                <a href="https://hjh0cv.deta.dev/" class="nav__logo"><img src="../static/img/logo.png" alt="" class="img-logo"></a>
-
-                <!-- Theme change button -->
-                <i class="bx bx-moon change-theme" id="theme-button"></i> 
-
-
-            </nav>
-     </header>
-
-     <!--=============== MAIN ===============-->
-     <main class="main">
-         <!--=============== HOME ===============-->
-         <section class="home section" id="home">
-             <div class="home__container thanks container grid">
-                <div class="home__data thanks">
-                    <span class="home__greeting">Thanks for writing to us</span>
-                    <h1 class="home__name">We'll bein touch</h1>
-                    <h3 class="home__education">coming soon</h3>
-
-                    <div class="home__buttons">
-                        
-                        <a href="https://127.0.0.1:8000/#home" class="button">Home</a>
-                    </div>
-                </div>
-
-             </div>
-         </section>
-         
- 
-     </main>
-
-     <!--=============== FOOTER ===============-->
-     <footer class="footer">
-        <div class="footer__container container">
-            <h1 class="footer__title">ForeverHomes</h1>
-
-            <ul class="footer__list">
-                <li>
-                    <a href="#about" class="footer__link">About</a>
-                </li>
-
-                <li>
-                    <a href="#skills" class="footer__link">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#work" class="footer__link">Work</a>
-                </li>
-            </ul>
-
-            <ul class="footer__social">
-                <li>
-                    <a href="https://www.facebook.com/devspace.2023" class="footer__social-link">
-                    <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/devspace_by_je" class="footer__social-link">
-                    <i class="bx bxl-instagram"></i>
-                    </a>
-                    <a href="https://www.twitter.com/jesusaed19" class="footer__social-link">
-                    <i class="bx bxl-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-
-            <span class="footer__copy">
-                &#169; DevSpace. All rigths reserved. <br> <a class="footer__copy-link" target="_blank" rel="noopener noreferrer" href="https://34h0hq.deta.dev">DevSpace-by-jesusespinoza.com</a>
-            </span>
+    <section class="modal">
+        <div class="modal__container">
+            <img src="{{url_for('static', path='/img/logo.png')}}" class="modal__img">
+            <h2 class="modal__title">¡Thanks for contacting us!</h2>
+            <p class="modal__paragraph">We will be in touch very soon.</p>
+            <a href="http://127.0.0.1:8000/" class="modal__close">Go Back</a>
         </div>
-         
-     </footer>
+    </section>
 
 
      <!--=============== SCROLLREVEAL ===============-->

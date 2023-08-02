@@ -33,4 +33,6 @@ async def dataemail(request: Request, data_email = Email, name: str = Form(), ma
     return templates.TemplateResponse("contact.html", {"request": request})
     # return Response(status_code=status.HTTP_204_NO_CONTENT)
     
-    
+@app.get("/thanksyou", response_class=HTMLResponse)
+async def root(request: Request):
+    return templates.TemplateResponse("contact.html", {"request": request})
