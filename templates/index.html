@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon">
-    
-    
+    <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon" />
+
     <!-- BoxIcons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="{{url_for('static', path='/css/swiper-bundle.min.css')}}">
-    
+    <link rel="stylesheet" href="{{url_for('static', path='/css/swiper-bundle.min.css')}}" />
+
     <!-- Css -->
-    <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}">
-    
+    <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}" />
+
     <title>Forever Homes LLC</title>
-
 </head>
+
 <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav__container">
+            <a href="#home" class="nav__logo"><img src="../static/img/logo.png" alt="" class="img-logo" /></a>
 
-     <!--=============== HEADER ===============-->
-     <header class="header" id="header">
-            <nav class="nav__container">
+            <label for="menu" class="nav__label">
+                <img src="../static/img/menu.svg" alt="" />
+            </label>
 
+            <input type="checkbox" id="menu" class="nav__input" />
 
-                <a href="#home" class="nav__logo"><img src="../static/img/logo.png" alt="" class="img-logo"></a>
-                
-                <label for="menu" class="nav__label">
-                    <img src="../static/img/menu.svg" alt="" >
-                </label>
+            <div class="nav__menu">
+                <a href="#home" class="nav__item">Home</a>
+                <a href="#about" class="nav__item">About us</a>
+                <a href="#work" class="nav__item">Projects</a>
+                <a href="#contact" class="nav__item">Contact</a>
+                <!-- Theme change button -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
 
-                <input type="checkbox"  id="menu" class="nav__input">
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home_img">
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, We are</span>
+                        <h1 class="home__name">FOREVER HOMES LLC</h1>
+                        <h3 class="home__education">General Contractor</h3>
 
-                <div class="nav__menu">
-                    <a href="#home" class="nav__item">Home</a>
-                    <a href="#about" class="nav__item">About us</a>
-                    <a href="#work" class="nav__item">Projects</a>
-                    <a href="#contact" class="nav__item">Contact</a>
-                    <!-- Theme change button -->
-                    <i class="bx bx-moon change-theme" id="theme-button"></i> 
-                </div>
-
-
-
-
-            </nav>
-     </header>
-
-     <!--=============== MAIN ===============-->
-     <main class="main">
-         <!--=============== HOME ===============-->
-         <section class="home_img">
-            
-         <section class="home section" id="home">
-             <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, We are</span>
-                    <h1 class="home__name">FOREVER HOMES LLC</h1>
-                    <h3 class="home__education">General Contractor</h3>
-
-                    <div class="home__buttons">
-                        
-                        <a href="#about" class="button">About us</a>
+                        <div class="home__buttons">
+                            <a href="#about" class="button">About us</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- <div class="home__handle">
+                    <!-- <div class="home__handle">
                     <img src="../static/img/work13.jpg" alt="" class="home__img">
                 </div>
 
@@ -83,22 +74,20 @@
                     <i class="bx bx-mouse home__scroll-icon"></i>
                     <span class="home__scroll-name">Scroll Down</span>
                 </a> -->
-
-             </div>
-         </section>
+                </div>
+            </section>
         </section>
-         
-         <!--=============== ABOUT ===============-->
-         <section class="about section" id="about">
-             <span class="section__subtitle">Our Intro</span>
-             <h2 class="section__title">About Us</h2>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Our Intro</span>
+            <h2 class="section__title">About Us</h2>
 
             <div class="about__container container grid">
-                <img src="../static/img/work19.jpg" alt="" class="about__img">
+                <img src="../static/img/framing/f00.jpg" alt="" class="about__img" />
 
                 <div class="about__data">
                     <div class="about__info">
-                    
                         <div class="about__box">
                             <i class="bx bx-award about__icon"></i>
                             <h3 class="about__title">Experience</h3>
@@ -119,355 +108,190 @@
                     </div>
 
                     <p class="about__description">
-                        "We are an independent, client-focused constrution business, whose main goal is to meet the needs of our constumers while contributing to the development of the community. We strive to offer the finest quality design, const estimates, site preparation, construtions and repair to clients needing both large and small scale construction services"
+                        "We are an independent, client-focused constrution business, whose
+                        main goal is to meet the needs of our constumers while
+                        contributing to the development of the community. We strive to
+                        offer the finest quality design, const estimates, site
+                        preparation, construtions and repair to clients needing both large
+                        and small scale construction services"
                     </p>
 
                     <a href="#contact" class="button">Contact Us</a>
-
                 </div>
 
             </div>
 
-         </section>
+        </section>
 
-         <!--=============== SKILLS ===============-->
-          <section class="skills section" id="skills">
-             <span class="section__subtitle">Our abilities</span>
-             <h2 class="section__title">Our Experience</h2>
 
-            <div class="skills__container container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title">General Construction</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Remodels</h3>
-                                    <span class="skills__level">7 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Drywall</h3>
-                                    <span class="skills__level">6 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Trim work</h3>
-                                    <span class="skills__level">4 years</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Framing</h3>
-                                    <span class="skills__level">5 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Interior painting</h3>
-                                    <span class="skills__level">8 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Home repairs</h3>
-                                    <span class="skills__level">9 years</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="skills__content">
-                    <h3 class="skills__title">Remodels</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Remodels</h3>
-                                    <span class="skills__level">6 years </span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Framing</h3>
-                                    <span class="skills__level">9 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Construction clean up.</h3>
-                                    <span class="skills__level">5 years</span>
-                                </div>
-
-                            </div>
-
-                            
-                        </div>
-
-                        <div class="skills__group">
-                            
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Fencing</h3>
-                                    <span class="skills__level">2 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Trim work</h3>
-                                    <span class="skills__level">10 years</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div>
-                                    <h3 class="skills__name">Decks</h3>
-                                    <span class="skills__level">4 years</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-         </section> 
-
-         <!--=============== SERVICES ===============-->
-         <!-- <section class="services section" id="services">
-             <span class="section__subtitle">Our Services</span>
-             <h2 class="section__title">What We Offer</h2>
-
-            <div class="services__container container grid">
-
-                <div class="services__card">
-                    <h3 class="services__title">General <br> Construction</h3>
-
-                    <span class="services__button">
-                        See more <i class="bx bx-right-arrow-alt services__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="bx bx-x services__modal-close"></i>
-
-                            <h3 class="services__modal-title">General Construction <h3>
-                            <p class="services__modal-description">
-                                Service with more than 12 years of experience.
-                                Providing quality work to clients and companies.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I develop the user interface.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Web page development.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I create ux element interactions.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I position your company brand.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">Home <br> Remodels</h3>
-
-                    <span class="services__button">
-                        See more <i class="bx bx-right-arrow-alt services__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="bx bx-x services__modal-close"></i>
-
-                            <h3 class="services__modal-title">Home remodels </h3>
-                            <p class="services__modal-description">
-                                Service with more than 12 years of experience.
-                                Providing quality work to clients and companies.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I develop the user interface.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Web page development.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I create ux element interactions.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I position your company brand.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="services__card">
-                    <h3 class="services__title">Home <br> Repairs</h3>
-
-                    <span class="services__button">
-                        See more <i class="bx bx-right-arrow-alt services__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="bx bx-x services__modal-close"></i>
-
-                            <h3 class="services__modal-title">Home repairs </h3>
-                            <p class="services__modal-description">
-                                Service with more than 12 years of experience.
-                                Providing quality work to clients and companies.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Construction clean up.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Web page development.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I create ux element interactions.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">I position your company brand.</p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class="bx bx-check services__modal-icon"></i>
-                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-         </section> -->
-
-         <!--=============== WORK ===============-->
-         <section class="work section" id="work">
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
             <span class="section__subtitle">Our Portfolio</span>
             <h2 class="section__title">Recent Works</h2>
 
             <div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".web">Remodels</span>
-                <span class="work__item" data-filter=".movil">Framing</span>
-                <span class="work__item" data-filter=".design">Fencing</span>
+                <span class="work__item" data-filter=".decks">Decks</span>
+                <span class="work__item" data-filter=".fences">Fences</span>
+                <span class="work__item" data-filter=".fencing">Fencing</span>
+                <span class="work__item" data-filter=".framing">Framing</span>
+                <span class="work__item" data-filter=".garage">Garage</span>
+                <span class="work__item" data-filter=".siding">Siding</span>
+                <span class="work__item" data-filter=".sunroom">Sunroom</span>
             </div>
 
             <div class="work__container container grid">
-                <div class="work__card mix web">
-                    <img src="{{url_for('static', path='/img/work7.jpg')}}" alt="" class="work__img">
 
-                    <h3 class="work__title">Remodels</h3>
+                <!-- =========== Fencing ==================== -->
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a> -->
+                </div>
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fencing/fe02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                                    </a> -->
+                </div>
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fencing/fe03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                                        </a> -->
+                </div>
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fencing/fe04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <!-- ============== Decks =================== -->
+
+                <div class="work__card mix decks">
+                    <img src="{{url_for('static', path='/img/decks/decks01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Decks</h3>
 
                     <!-- <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a> -->
                 </div>
 
-                <div class="work__card mix movil">
-                    <img src="{{url_for('static', path='/img/work20.jpg')}}" alt="" class="work__img">
+                <div class="work__card mix decks">
+                    <img src="{{url_for('static', path='/img/decks/decks02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Decks</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix decks">
+                    <img src="{{url_for('static', path='/img/decks/decks03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Decks</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix decks">
+                    <img src="{{url_for('static', path='/img/decks/decks04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Decks</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix decks">
+                    <img src="{{url_for('static', path='/img/decks/decks05.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Decks</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix decks">
+                    <img src="{{url_for('static', path='/img/decks/decks06.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Decks</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <!-- ============== Fences ================== -->
+
+                <div class="work__card mix fences">
+                    <img src="{{url_for('static', path='/img/fences/fen01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fences</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix fences">
+                    <img src="{{url_for('static', path='/img/fences/fen02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fences</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix fences">
+                    <img src="{{url_for('static', path='/img/fences/fen03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fences</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix fences">
+                    <img src="{{url_for('static', path='/img/fences/fen04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fences</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <!-- ================== framing ================= -->
+
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Framing</h3>
 
@@ -476,92 +300,242 @@
                     </a> -->
                 </div>
 
-                <div class="work__card mix design">
-                    <img src="{{url_for('static', path='/img/work14.jpg')}}" alt="" class="work__img">
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f01.jpg')}}" alt="" class="work__img" />
 
-                    <h3 class="work__title">Remodels</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix web">
-                    <img src="{{url_for('static', path='/img/work13.jpg')}}" alt="" class="work__img">
-
-                    <h3 class="work__title">Home repairs</h3>
+                    <h3 class="work__title">Framing</h3>
 
                     <!-- <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a> -->
                 </div>
 
-                <div class="work__card mix movil">
-                    <img src="{{url_for('static', path='/img/work8.jpg')}}" alt="" class="work__img">
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f02.jpg')}}" alt="" class="work__img" />
 
-                    <h3 class="work__title">Fencing</h3>
+                    <h3 class="work__title">Framing</h3>
 
-                    <a href="#" class="work__button">
+                    <!-- <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a>
-                </div>
-            </div>
-
-
-         </section>
-
-         <!--=============== TESTIMONIALS ===============-->
-         <!-- <section class="testimonial section" >
-
-            <span class="section__subtitle">My clients say</span>
-            <h2 class="section__title">Testimonial</h2>
-
-            <div class="testimonial__container container swiper">
-                <div class="swiper-wrapper">
-                    <div class="testimonial__card swiper-slide">
-                        <img src="{{url_for('static', path='img/testimonial1.png')}}" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Jhon Doe</h3>
-
-                        <p class="testimonial__description">
-                            A really goog job, all aspects of the project were 
-                            followed step by step and with good results
-                        </p>
-                    </div>
-
-                    <div class="testimonial__card swiper-slide">
-                        <img src="{{url_for('static', path='img/testimonial2.png')}}" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Elena Vusy</h3>
-                        <p class="testimonial__description">
-                            A really goog job, all aspects of the project were 
-                            followed step by step and with good results
-                        </p>
-
-                    </div>
-
-                    <div class="testimonial__card swiper-slide">
-                        <img src="{{url_for('static', path='img/testimonial3.png')}}" alt="" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Paula Tria</h3>
-                        <p class="testimonial__description">
-                            A really goog job, all aspects of the project were 
-                            followed step by step and with good results
-                        </p>
-                    </div>
+                    </a> -->
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Framing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Framing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f05.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Framing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix framing">
+                    <img src="{{url_for('static', path='/img/framing/f06.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Framing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <!-- =============== Garage ================= -->
+
+                <div class="work__card mix garage">
+                    <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Garage</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix garage">
+                    <img src="{{url_for('static', path='/img/garage/garage02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Garage</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix garage">
+                    <img src="{{url_for('static', path='/img/garage/garage03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Garage</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix garage">
+                    <img src="{{url_for('static', path='/img/garage/garage04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Garage</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <!-- =============== Siding ================= -->
+
+                <div class="work__card mix siding">
+                    <img src="{{url_for('static', path='/img/siding/si01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Siding</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix siding">
+                    <img src="{{url_for('static', path='/img/siding/si02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Siding</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix siding">
+                    <img src="{{url_for('static', path='/img/siding/si03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Siding</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix siding">
+                    <img src="{{url_for('static', path='/img/siding/si04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Siding</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix siding">
+                    <img src="{{url_for('static', path='/img/siding/si05.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Siding</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix siding">
+                    <img src="{{url_for('static', path='/img/siding/si06.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Siding</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <!-- =============== Sunroom ================= -->
+
+                <div class="work__card mix sunroom">
+                    <img src="{{url_for('static', path='/img/sunroom/sun01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Sunroom</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix sunroom">
+                    <img src="{{url_for('static', path='/img/sunroom/sun02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Sunroom</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix sunroom">
+                    <img src="{{url_for('static', path='/img/sunroom/sun03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Sunroom</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix sunroom">
+                    <img src="{{url_for('static', path='/img/sunroom/sun04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Sunroom</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix sunroom">
+                    <img src="{{url_for('static', path='/img/sunroom/sun05.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Sunroom</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix sunroom">
+                    <img src="{{url_for('static', path='/img/sunroom/sun06.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Sunroom</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                
 
             </div>
-             
-         </section> -->
+        </section>
 
-         <!--=============== CONTACT ===============-->
-        
-         <section class="contact section" id="contact">
-             <span class="section__subtitle">Get in touch</span>
-             <h2 class="section__title">Contact Us</h2>
+        <!--=============== CONTACT ===============-->
+
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Us</h2>
 
             <div class="contact__container container grid">
                 <div class="contact__content">
@@ -573,8 +547,10 @@
                             <h3 class="contact__card-title">Email</h3>
                             <span class="contact__card-data">info@foreverhomeswa.com</span>
 
-                            <a href="mailto:info@foreverhomeswa.com" target="_blank" rel="noreferrer noopener" class="contact__button">
-                                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                            <a href="mailto:info@foreverhomeswa.com" target="_blank" rel="noreferrer noopener"
+                                class="contact__button">
+                                Write me
+                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
 
@@ -583,8 +559,10 @@
                             <h3 class="contact__card-title">Whatsapp</h3>
                             <span class="contact__card-data">+1 (509) 850-6422</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=15098506422&text=Hello,%20more%20information, about ForeverHomes!" target="_blank" rel="noreferrer noopener" class="contact__button">
-                                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                            <a href="https://api.whatsapp.com/send?phone=15098506422&text=Hello,%20more%20information, about ForeverHomes!"
+                                target="_blank" rel="noreferrer noopener" class="contact__button">
+                                Write me
+                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
 
@@ -593,49 +571,48 @@
                             <h3 class="contact__card-title">Messenger</h3>
                             <span class="contact__card-data">ForeverHomes</span>
 
-                            <a href="https://m.me/foreverhomesllc" target="_blank" rel="noreferrer noopener" class="contact__button">
-                                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                            <a href="https://m.me/foreverhomesllc" target="_blank" rel="noreferrer noopener"
+                                class="contact__button">
+                                Write me
+                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
                     </div>
-
-
                 </div>
-                
+
                 <div class="contact__content">
                     <h3 class="contact__title">Write me your project</h3>
 
                     <form action="/thanks" method="post" class="contact__form">
-
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input name="name" type="text" placeholder="Insert your name." class="contact__form-input" required>
+                            <input name="name" type="text" placeholder="Insert your name." class="contact__form-input"
+                                required />
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
-                            <input name="mail" type="email" placeholder="Insert your email" class="contact__form-input" required>
+                            <input name="mail" type="email" placeholder="Insert your email" class="contact__form-input"
+                                required />
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Project</label>
-                            <textarea name="project" id="" cols="30" rows="10" placeholder="Write your project" required class="contact__form-input"></textarea>
+                            <textarea name="project" id="" cols="30" rows="10" placeholder="Write your project" required
+                                class="contact__form-input"></textarea>
                         </div>
 
-                        <button type="submit" class="button button_modal">Send Message</button>
-
+                        <button type="submit" class="button button_modal">
+                            Send Message
+                        </button>
                     </form>
-
                 </div>
             </div>
+        </section>
+    </main>
 
-         </section>
-
-        
-     </main>
-
-     <!--=============== FOOTER ===============-->
-     <footer class="footer">
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
         <div class="footer__container container">
             <h1 class="footer__title">ForeverHomes</h1>
 
@@ -656,35 +633,34 @@
             <ul class="footer__social">
                 <li>
                     <a href="https://www.facebook.com/foreverhomellc" class="footer__social-link">
-                    <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-facebook"></i>
                     </a>
                     <a href="https://www.instagram.com/foreverhomesllc" class="footer__social-link">
-                    <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-instagram"></i>
                     </a>
                     <a href="https://www.twitter.com/foreverhomellc" class="footer__social-link">
-                    <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-twitter"></i>
                     </a>
                 </li>
             </ul>
 
             <span class="footer__copy">
-                &#169; ForeverHomesLLC. All rigths reserved. <br> 
+                &#169; FOREVERHOMELLC. All rigths reserved. <br />
             </span>
         </div>
-         
-     </footer>
+    </footer>
 
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="{{url_for('static', path='/js/scrollreveal.min.js')}}"></script>
 
-     <!--=============== SCROLLREVEAL ===============-->
-     <script src="{{url_for('static', path='/js/scrollreveal.min.js')}}"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="{{url_for('static', path='/js/swiper-bundle.min.js')}}"></script>
 
-     <!--=============== SWIPER JS ===============-->
-     <script src="{{url_for('static', path='/js/swiper-bundle.min.js')}}"></script>
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="{{url_for('static', path='/js/mixitup.min.js')}}"></script>
 
-     <!--=============== MIXITUP FILTER ===============-->
-     <script src="{{url_for('static', path='/js/mixitup.min.js')}}"></script>
-
-     <!--=============== MAIN JS ===============-->
+    <!--=============== MAIN JS ===============-->
     <script src="{{url_for('static', path='/js/main.js')}}"></script>
 </body>
+
 </html>
