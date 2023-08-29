@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon" />
 
@@ -17,9 +20,12 @@
     <!-- Css -->
     <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}" />
 
-    <title>Forever Homes LLC</title>
-</head>
 
+    <title>Forever Homes LLC</title>
+    
+    <script src="{{url_for('static', path='/js/slide.js')}}" defer></script>
+</head>
+ 
 <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
@@ -92,11 +98,11 @@
                     </div>
 
                     <p class="about__description">
-                        "We are an independent, client-focused constrution business, whose
-                        main goal is to meet the needs of our constumers while
+                        "We are an independent, client-focused constrution company, whose
+                        main goal is to meet the needs of our costumers while
                         contributing to the development of the community. We strive to
-                        offer the finest quality design, const estimates, site
-                        preparation, construtions and repair to clients needing both large
+                        offer the finest quality design, cost estimates, site
+                        preparation, constructions and repair to clients needing both large
                         and small scale construction services"
                     </p>
 
@@ -113,397 +119,96 @@
             <span class="section__subtitle">Our Portfolio</span>
             <h2 class="section__title">Recent Works</h2>
 
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".decks">Decks</span>
-                <span class="work__item" data-filter=".fences">Fences</span>
-                <span class="work__item" data-filter=".fencing">Fencing</span>
-                <span class="work__item" data-filter=".framing">Framing</span>
-                <span class="work__item" data-filter=".garage">Garage</span>
-                <span class="work__item" data-filter=".siding">Siding</span>
-                <span class="work__item" data-filter=".sunroom">Sunroom</span>
-            </div>
-
             <div class="work__container container grid">
 
-                <!-- =========== Fencing ==================== -->
+                <div class="wrapper__container">
+                <div class="wrapper">
+                    <i id="left" class='bx bx-chevron-left'></i>
+                    <div class="carousel">
+                        <!-- ================== Fencing ======================== -->
 
-                <div class="work__card mix fencing">
-                    <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img" />
+                        <img src="../static/img/titles/fencing.png" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe01.jpg" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe02.jpg" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe03.jpg" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe04.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen01.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen02.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen03.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen04.jpg" alt="" draggable="false">
 
-                    <h3 class="work__title">Fencing</h3>
+                        <!-- ================== Decks ========================== -->
 
-                    <!-- <a href="#" class="work__button">
-                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                        </a> -->
+                        <img src="../static/img/titles/decks.png" alt="" draggable="false">
+                        <img src="../static/img/decks/decks01.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks02.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks03.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks04.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks05.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks06.jpg" alt="" draggable="false">
+
+                        <!-- ================== Framing ========================== -->
+
+                        <img src="../static/img/titles/framing.png" alt="" draggable="false">
+                        <img src="../static/img/framing/f00.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f01.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f02.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f03.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f04.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f05.jpg" alt="" draggable="false">
+
+                        <!-- ================== Garage ========================== -->
+
+                        <img src="../static/img/titles/garage.png" alt="" draggable="false">
+                        <img src="../static/img/garage/garage01.jpg" alt="" draggable="false">
+                        <img src="../static/img/garage/garage02.jpg" alt="" draggable="false">
+                        <img src="../static/img/garage/garage03.jpg" alt="" draggable="false">
+                        <img src="../static/img/garage/garage04.jpg" alt="" draggable="false">
+
+                        <!-- ================== Roof ========================== -->
+
+                        <img src="../static/img/titles/roof.png" alt="" draggable="false">
+                        <img src="../static/img/roof/roof01.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof02.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof03.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof04.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof05.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof06.jpg" alt="" draggable="false">
+
+                        <!-- ================== Siding ========================== -->
+
+                        <img src="../static/img/titles/siding.png" alt="" draggable="false">
+                        <img src="../static/img/siding/si01.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si02.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si03.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si04.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si05.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si06.jpg" alt="" draggable="false">
+
+                        <!-- ================== Sunroom ========================== -->
+
+                        <img src="../static/img/titles/sunroom.png" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun01.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun02.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun03.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun04.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun05.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun06.jpg" alt="" draggable="false">
+
+
+                    </div>
+                    <i id="rigth" class='bx bx-chevron-right' ></i>
                 </div>
-
-                <div class="work__card mix fencing">
-                    <img src="{{url_for('static', path='/img/fencing/fe02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fencing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                                    </a> -->
-                </div>
-
-                <div class="work__card mix fencing">
-                    <img src="{{url_for('static', path='/img/fencing/fe03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fencing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                                        </a> -->
-                </div>
-
-                <div class="work__card mix fencing">
-                    <img src="{{url_for('static', path='/img/fencing/fe04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fencing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <!-- ============== Decks =================== -->
-
-                <div class="work__card mix decks">
-                    <img src="{{url_for('static', path='/img/decks/decks01.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Decks</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix decks">
-                    <img src="{{url_for('static', path='/img/decks/decks02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Decks</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix decks">
-                    <img src="{{url_for('static', path='/img/decks/decks03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Decks</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix decks">
-                    <img src="{{url_for('static', path='/img/decks/decks04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Decks</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix decks">
-                    <img src="{{url_for('static', path='/img/decks/decks05.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Decks</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix decks">
-                    <img src="{{url_for('static', path='/img/decks/decks06.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Decks</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <!-- ============== Fences ================== -->
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen01.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <!-- ================== Framing ================= -->
-
-                <div class="work__card mix framing">
-                    <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Framing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix framing">
-                    <img src="{{url_for('static', path='/img/framing/f01.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Framing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix framing">
-                    <img src="{{url_for('static', path='/img/framing/f02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Framing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix framing">
-                    <img src="{{url_for('static', path='/img/framing/f03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Framing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix framing">
-                    <img src="{{url_for('static', path='/img/framing/f04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Framing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix framing">
-                    <img src="{{url_for('static', path='/img/framing/f05.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Framing</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
                 </div>
 
 
-                <!-- =============== Garage ================= -->
 
-                <div class="work__card mix garage">
-                    <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img" />
 
-                    <h3 class="work__title">Garage</h3>
 
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix garage">
-                    <img src="{{url_for('static', path='/img/garage/garage02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Garage</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix garage">
-                    <img src="{{url_for('static', path='/img/garage/garage03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Garage</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix garage">
-                    <img src="{{url_for('static', path='/img/garage/garage04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Garage</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <!-- =============== Siding ================= -->
-
-                <div class="work__card mix siding">
-                    <img src="{{url_for('static', path='/img/siding/si01.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Siding</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix siding">
-                    <img src="{{url_for('static', path='/img/siding/si02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Siding</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix siding">
-                    <img src="{{url_for('static', path='/img/siding/si03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Siding</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix siding">
-                    <img src="{{url_for('static', path='/img/siding/si04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Siding</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix siding">
-                    <img src="{{url_for('static', path='/img/siding/si05.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Siding</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix siding">
-                    <img src="{{url_for('static', path='/img/siding/si06.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Siding</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <!-- =============== Sunroom ================= -->
-
-                <div class="work__card mix sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun01.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Sunroom</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Sunroom</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Sunroom</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Sunroom</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun05.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Sunroom</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix sunroom">
-                    <img src="{{url_for('static', path='/img/sunroom/sun06.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Sunroom</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                
-
+            </di>
+        
             </div>
+
         </section>
 
         <!--=============== CONTACT ===============-->
@@ -556,24 +261,24 @@
                 </div>
 
                 <div class="contact__content">
-                    <h3 class="contact__title">Write me your project</h3>
+                    <h3 class="contact__title">How can we help you?</h3>
 
                     <form action="/thanks" method="post" class="contact__form">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input name="name" type="text" placeholder="Insert your name." class="contact__form-input"
+                            <input name="name" type="text" placeholder="" class="contact__form-input"
                                 required />
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input name="mail" type="email" placeholder="Insert your email" class="contact__form-input"
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input name="mail" type="email" placeholder="" class="contact__form-input"
                                 required />
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Project</label>
-                            <textarea name="project" id="" cols="30" rows="10" placeholder="Write your project" required
+                            <textarea name="project" id="" cols="30" rows="10" placeholder="Tell us about your project." required
                                 class="contact__form-input"></textarea>
                         </div>
 
@@ -636,6 +341,10 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="{{url_for('static', path='/js/main.js')}}"></script>
+
+    
+   
+
 </body>
 
 </html>

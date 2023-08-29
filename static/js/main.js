@@ -58,7 +58,7 @@ linkWork.forEach(L=> L.addEventListener('click', activeWork))
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 let swiperTestimonial = new Swiper('.testimonial__container', {
-    spaceBetween: 24,
+    spaceBetween: 6,
     loop: true,
     grabCursor: true,
 
@@ -162,4 +162,8 @@ openModal.addEventListener('submit', () =>{
 closeModal.addEventListener('click', () =>{
     modal_contact.classList.remove('modal--show');
 });
+
+
+
+/* ===================== Mixitup ============================ */
 
