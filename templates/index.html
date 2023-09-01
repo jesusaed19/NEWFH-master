@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon" />
 
@@ -17,9 +20,12 @@
     <!-- Css -->
     <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}" />
 
-    <title>Forever Homes LLC</title>
-</head>
 
+    <title>Forever Homes LLC</title>
+    
+    <script src="{{url_for('static', path='/js/slide.js')}}" defer></script>
+</head>
+ 
 <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
@@ -116,6 +122,7 @@
             <span class="section__subtitle">Our Portfolio</span>
             <h2 class="section__title">Recent Works</h2>
 
+
             <div class="work__filters">
                 <span class="work__item  active-work " data-filter=".one">All</span>
                 <span class="work__item" data-filter=".decks">Decks</span>
@@ -127,19 +134,93 @@
                 <span class="work__item" data-filter=".sunroom">Sunroom</span>
             </div>
 
+
             <div class="work__container container grid">
 
-                <!-- =========== Fencing ==================== -->
+                <div class="wrapper__container">
+                <div class="wrapper">
+                    <i id="left" class='bx bx-chevron-left'></i>
+                    <div class="carousel">
+                        <!-- ================== Fencing ======================== -->
+
 
                 <div class="work__card mix one fencing">
                     <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img" />
 
-                    <h3 class="work__title">Fencing</h3>
+                        <img src="../static/img/titles/fencing.png" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe01.jpg" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe02.jpg" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe03.jpg" alt="" draggable="false">
+                        <img src="../static/img/fencing/fe04.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen01.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen02.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen03.jpg" alt="" draggable="false">
+                        <img src="../static/img/fences/fen04.jpg" alt="" draggable="false">
 
-                    <!-- <a href="#" class="work__button">
-                            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                        </a> -->
+
+                        <!-- ================== Decks ========================== -->
+
+                        <img src="../static/img/titles/decks.png" alt="" draggable="false">
+                        <img src="../static/img/decks/decks01.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks02.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks03.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks04.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks05.jpg" alt="" draggable="false">
+                        <img src="../static/img/decks/decks06.jpg" alt="" draggable="false">
+
+                        <!-- ================== Framing ========================== -->
+
+                        <img src="../static/img/titles/framing.png" alt="" draggable="false">
+                        <img src="../static/img/framing/f00.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f01.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f02.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f03.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f04.jpg" alt="" draggable="false">
+                        <img src="../static/img/framing/f05.jpg" alt="" draggable="false">
+
+                        <!-- ================== Garage ========================== -->
+
+                        <img src="../static/img/titles/garage.png" alt="" draggable="false">
+                        <img src="../static/img/garage/garage01.jpg" alt="" draggable="false">
+                        <img src="../static/img/garage/garage02.jpg" alt="" draggable="false">
+                        <img src="../static/img/garage/garage03.jpg" alt="" draggable="false">
+                        <img src="../static/img/garage/garage04.jpg" alt="" draggable="false">
+
+                        <!-- ================== Roof ========================== -->
+
+                        <img src="../static/img/titles/roof.png" alt="" draggable="false">
+                        <img src="../static/img/roof/roof01.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof02.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof03.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof04.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof05.jpg" alt="" draggable="false">
+                        <img src="../static/img/roof/roof06.jpg" alt="" draggable="false">
+
+                        <!-- ================== Siding ========================== -->
+
+                        <img src="../static/img/titles/siding.png" alt="" draggable="false">
+                        <img src="../static/img/siding/si01.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si02.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si03.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si04.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si05.jpg" alt="" draggable="false">
+                        <img src="../static/img/siding/si06.jpg" alt="" draggable="false">
+
+                        <!-- ================== Sunroom ========================== -->
+
+                        <img src="../static/img/titles/sunroom.png" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun01.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun02.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun03.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun04.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun05.jpg" alt="" draggable="false">
+                        <img src="../static/img/sunroom/sun06.jpg" alt="" draggable="false">
+
+
+                    </div>
+                    <i id="rigth" class='bx bx-chevron-right' ></i>
                 </div>
+
 
                 <div class="work__card mix fencing">
                     <img src="{{url_for('static', path='/img/fencing/fe02.jpg')}}" alt="" class="work__img" />
@@ -336,6 +417,7 @@
                     <!-- <a href="#" class="work__button">
                         Demo <i class="bx bx-right-arrow-alt work__icon"></i>
                     </a> -->
+
                 </div>
 
                 <!-- ================== Roof ================= -->
@@ -401,7 +483,7 @@
                 </div>
 
 
-                <!-- =============== Garage ================= -->
+
 
                 <div class="work__card mix one garage">
                     <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img" />
@@ -569,7 +651,11 @@
 
                 
 
+
+            </di>
+        
             </div>
+
         </section>
 
         <!--=============== CONTACT ===============-->
@@ -702,6 +788,10 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="{{url_for('static', path='/js/main.js')}}"></script>
+
+    
+   
+
 </body>
 
 </html>
