@@ -27,7 +27,7 @@
             <a href="#home" class="nav__logo"><img src="../static/img/logo.png" alt="" class="img-logo" /></a>
 
             <label for="menu" class="nav__label">
-                <img src="../static/img/menu.svg" alt="" />
+                <i class='bx bx-customize icon-nav'></i>
             </label>
 
             <input type="checkbox" id="menu" class="nav__input" />
@@ -37,11 +37,14 @@
                 <a href="#about" class="nav__item">About us</a>
                 <a href="#work" class="nav__item">Projects</a>
                 <a href="#contact" class="nav__item">Contact</a>
-                <!-- Theme change button -->
+                 <!-- Theme change button  -->
                 <i class="bx bx-moon change-theme" id="theme-button"></i>
+                
             </div>
         </nav>
     </header>
+
+    
 
     <!--=============== MAIN ===============-->
     <main class="main">
@@ -92,11 +95,11 @@
                     </div>
 
                     <p class="about__description">
-                        "We are an independent, client-focused constrution business, whose
-                        main goal is to meet the needs of our constumers while
+                        "We are an independent, client-focused constrution company, whose
+                        main goal is to meet the needs of our costumers while
                         contributing to the development of the community. We strive to
-                        offer the finest quality design, const estimates, site
-                        preparation, construtions and repair to clients needing both large
+                        offer the finest quality design, cost estimates, site
+                        preparation, constructions and repair to clients needing both large
                         and small scale construction services"
                     </p>
 
@@ -114,11 +117,11 @@
             <h2 class="section__title">Recent Works</h2>
 
             <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item  active-work " data-filter=".one">All</span>
                 <span class="work__item" data-filter=".decks">Decks</span>
-                <span class="work__item" data-filter=".fences">Fences</span>
                 <span class="work__item" data-filter=".fencing">Fencing</span>
                 <span class="work__item" data-filter=".framing">Framing</span>
+                <span class="work__item" data-filter=".roof">Roof</span>
                 <span class="work__item" data-filter=".garage">Garage</span>
                 <span class="work__item" data-filter=".siding">Siding</span>
                 <span class="work__item" data-filter=".sunroom">Sunroom</span>
@@ -128,7 +131,7 @@
 
                 <!-- =========== Fencing ==================== -->
 
-                <div class="work__card mix fencing">
+                <div class="work__card mix one fencing">
                     <img src="{{url_for('static', path='/img/fencing/fe01.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Fencing</h3>
@@ -168,9 +171,49 @@
                     </a> -->
                 </div>
 
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fences/fen01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fences/fen02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fences/fen03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix fencing">
+                    <img src="{{url_for('static', path='/img/fences/fen04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Fencing</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
                 <!-- ============== Decks =================== -->
 
-                <div class="work__card mix decks">
+                <div class="work__card mix one decks">
                     <img src="{{url_for('static', path='/img/decks/decks01.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Decks</h3>
@@ -230,51 +273,12 @@
                     </a> -->
                 </div>
 
-                <!-- ============== Fences ================== -->
 
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen01.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen02.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen03.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
-
-                <div class="work__card mix fences">
-                    <img src="{{url_for('static', path='/img/fences/fen04.jpg')}}" alt="" class="work__img" />
-
-                    <h3 class="work__title">Fences</h3>
-
-                    <!-- <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-                    </a> -->
-                </div>
+                
 
                 <!-- ================== Framing ================= -->
 
-                <div class="work__card mix framing">
+                <div class="work__card mix one framing">
                     <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Framing</h3>
@@ -334,10 +338,72 @@
                     </a> -->
                 </div>
 
+                <!-- ================== Roof ================= -->
+
+                <div class="work__card mix one roof">
+                    <img src="{{url_for('static', path='/img/roof/roof01.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Roof</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix roof">
+                    <img src="{{url_for('static', path='/img/roof/roof02.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Roof</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix roof">
+                    <img src="{{url_for('static', path='/img/roof/roof03.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Roof</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix roof">
+                    <img src="{{url_for('static', path='/img/roof/roof04.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Roof</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix roof">
+                    <img src="{{url_for('static', path='/img/roof/roof05.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Roof</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
+                <div class="work__card mix roof">
+                    <img src="{{url_for('static', path='/img/roof/roof06.jpg')}}" alt="" class="work__img" />
+
+                    <h3 class="work__title">Roof</h3>
+
+                    <!-- <a href="#" class="work__button">
+                        Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a> -->
+                </div>
+
 
                 <!-- =============== Garage ================= -->
 
-                <div class="work__card mix garage">
+                <div class="work__card mix one garage">
                     <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Garage</h3>
@@ -379,7 +445,7 @@
 
                 <!-- =============== Siding ================= -->
 
-                <div class="work__card mix siding">
+                <div class="work__card mix one siding">
                     <img src="{{url_for('static', path='/img/siding/si01.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Siding</h3>
@@ -441,7 +507,7 @@
 
                 <!-- =============== Sunroom ================= -->
 
-                <div class="work__card mix sunroom">
+                <div class="work__card mix one sunroom">
                     <img src="{{url_for('static', path='/img/sunroom/sun01.jpg')}}" alt="" class="work__img" />
 
                     <h3 class="work__title">Sunroom</h3>
@@ -556,24 +622,24 @@
                 </div>
 
                 <div class="contact__content">
-                    <h3 class="contact__title">Write me your project</h3>
+                    <h3 class="contact__title">How can we help you?</h3>
 
                     <form action="/thanks" method="post" class="contact__form">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input name="name" type="text" placeholder="Insert your name." class="contact__form-input"
+                            <input name="name" type="text" placeholder="" class="contact__form-input"
                                 required />
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input name="mail" type="email" placeholder="Insert your email" class="contact__form-input"
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input name="mail" type="email" placeholder="" class="contact__form-input"
                                 required />
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Project</label>
-                            <textarea name="project" id="" cols="30" rows="10" placeholder="Write your project" required
+                            <textarea name="project" id="" cols="30" rows="10" placeholder="Tell us about your project." required
                                 class="contact__form-input"></textarea>
                         </div>
 
